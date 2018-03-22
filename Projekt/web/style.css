@@ -1,0 +1,120 @@
+body {
+    font-family: 'Cambria';font-size: 18px;text-align: center;background-image: url("tlo.jpg");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu_glowne {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu_glowne li:last-child {
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    width:300px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+table, th, td {
+   margin: 0 auto;
+   border: 1px solid orange;
+   border-collapse: collapse;
+   background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.panel {
+    overflow: hidden;
+    background-color: #333;
+    bottom: 0;
+    right: 0;
+}
+
+
+.panel a:hover {
+    background-color: #111;
+}
+
+.box {
+  background: #ffc000;
+  border-radius: 0px 4px 4px 0px;
+  left: -304px;
+  padding: 4px 4px 4px 0px;
+  position: fixed;
+  top:0px;
+  transition: transform 0.4s;
+  width: 300px;
+  height: 175px;
+  z-index: 1;
+}
+
+.box--right {
+  border-radius: 4px 0px 0px 4px;  
+  left: auto;
+  right: -304px;
+  padding: 4px 0px 4px 4px;
+}
+  
+
+.box--right:hover {
+  transform: translateX(-304px);
+}
+            
+.box .box__content {
+  background: #fff;
+  min-height: 200px;
+  padding: 10px;
+  position: relative;
+}
+            
+.box .box__title {
+  background: #fff;
+  border: solid #ffc000;
+  border-radius: 0px 0px 4px 4px;
+  border-width: 0px 4px 4px;
+  cursor: default;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: -74px;
+  text-align: center;
+  top: 70px;
+  transform: rotate(-90deg);
+  width: 106px;
+}
+
+.box--right .box__title {
+  border-radius: 4px 4px 0px 0px;
+  border-width: 4px 4px 0px;
+  position: absolute;
+  left: -74px;
+}
